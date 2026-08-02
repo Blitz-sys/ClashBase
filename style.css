@@ -1,9 +1,15 @@
-.main-body {
+.outside-body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: ghostwhite;
     text-align: center;
+}
+.inner-body {
+    width: 80%;
+    background-color: #F2B41F;
+    margin: 20px auto;
+    padding: 20px;
 }
 .button-container-Start {
     display: flex;
