@@ -10,6 +10,7 @@
     width: 80%;
     background-color: #F2B41F;
     padding: 100px;
+    border-radius: 12px;
 }
 .button-container-Start {
     display: flex;
@@ -22,4 +23,5 @@
     font-size: 20px;
     width: 300px;
     margin-bottom: 10px;
+    background-color: whitesmoke;
 }
