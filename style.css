@@ -1,7 +1,8 @@
-#outside-body {
+#outer-body {
     font-family: Arial, sans-serif;
     background-color: ghostwhite;
     display: flex;
+    min-height: 100vh;
     justify-content: center;
     align-items: center;
     text-align: center;
