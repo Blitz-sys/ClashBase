@@ -1,4 +1,4 @@
-.outside-body {
+#outside-body {
     font-family: Arial, sans-serif;
     background-color: ghostwhite;
     display: flex;
@@ -9,7 +9,7 @@
 .inner-body {
     width: 80%;
     background-color: #F2B41F;
-    padding: 100px;
+    padding: 90px;
     border-radius: 12px;
 }
 .button-container-Start {
