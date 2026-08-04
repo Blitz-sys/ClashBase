@@ -2,11 +2,11 @@ const basesButton = document.getElementById("basesButton");
 const armiesButton = document.getElementById("armiesButton");
 const clansButton = document.getElementById("clansButton");
 basesButton.addEventListener("click", () => {
-  alert("Bases Currently empty");
+  window.open("Bases.html", "_self");
 });
 armiesButton.addEventListener("click", () => {
-  alert("Armies Currently empty");
+  window.open("Armies.html", "_self");
 });
 clansButton.addEventListener("click", () => {
-  alert("Clans Currently empty");
+  window.open("Clans.html", "_self");
 });
