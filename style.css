@@ -1,6 +1,8 @@
 #outer-body {
     font-family: Arial, sans-serif;
     background-color: ghostwhite;
+    height: 98vh;
+    width: 102.5vw;
     display: flex;
     min-height: 100vh;
     justify-content: center;
@@ -8,10 +10,11 @@
     text-align: center;
 }
 .inner-body {
+    height: 60%;
     width: 80%;
     background-color: #F2B41F;
     padding: 90px;
-    border-radius: 12px;
+    border-radius: 12.5px;
 }
 .button-container-Start {
     display: flex;
