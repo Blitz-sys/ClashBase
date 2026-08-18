@@ -1,16 +1,15 @@
-const basesButton = document.getElementById("basesButton");
-const armiesButton = document.getElementById("armiesButton");
-const clansButton = document.getElementById("clansButton");
+document.body.addEventListener("click", (event) => {
+  if (event.target.id === "basesButton") {
+    window.location.assign("bases.html");
+  } else if (event.target.id === "armiesButton") {
+    window.location.assign("armies.html");
+  } else if (event.target.id === "clansButton") {
+    window.location.assign("clans.html");
+  } else if (event.target.id === "darkModeButton") {
+    document.body.classList.toggle("dark-mode");
+  }
+});
 const darkModeButton = document.getElementById("darkModeButton");
-basesButton.addEventListener("click", () => {
-  window.location.assign("bases.html", "_self");
-});
-armiesButton.addEventListener("click", () => {
-  window.location.assign("armies.html", "_self");
-});
-clansButton.addEventListener("click", () => {
-  window.location.assign("clans.html", "_self");
-});
 darkModeButton.addEventListener("click", () => {
   document.body.classList.toggle("dark-mode");
 });
