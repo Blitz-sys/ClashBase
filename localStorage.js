@@ -1,5 +1,5 @@
 const darkModeButton = document.getElementById("darkModeButton");
-const outerBody = document.getElementById("outer-body");
+const outerBody = document.querySelector(".outer-body");
 const startupButtons = document.querySelectorAll(".button-container-start button");
 let darkModeState = localStorage.getItem("darkMode") || "disabled";
 function toggleDarkMode() {
@@ -28,6 +28,5 @@ function applyDarkMode() {
     });
   }
 }
-
 applyDarkMode();
 darkModeButton.addEventListener("click", toggleDarkMode);
