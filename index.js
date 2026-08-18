@@ -5,11 +5,5 @@ document.body.addEventListener("click", (event) => {
     window.location.assign("armies.html");
   } else if (event.target.id === "clansButton") {
     window.location.assign("clans.html");
-  } else if (event.target.id === "darkModeButton") {
-    document.body.classList.toggle("dark-mode");
   }
-});
-const darkModeButton = document.getElementById("darkModeButton");
-darkModeButton.addEventListener("click", () => {
-  document.body.classList.toggle("dark-mode");
 });
