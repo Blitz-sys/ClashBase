@@ -1,0 +1,1 @@
+ClashBase is a website that allows users to copy and create bases. I eventually want to turn this into something similar to ClashChamps where you can get information on anything clash related, but I do need to keep it fast and have an easy learning curve. This may later have to be ad supported but as of now it has no ads.
