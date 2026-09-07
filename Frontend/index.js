@@ -7,3 +7,5 @@ document.body.addEventListener("click", (event) => {
     window.location.assign("clans.html");
   }
 });
+
+applyDarkMode();

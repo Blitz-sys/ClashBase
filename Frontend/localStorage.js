@@ -1,28 +1,22 @@
+const body = document.body;
 const darkModeButton = document.getElementById("darkModeButton");
-const outerBody = document.querySelector(".outer-body");
-const startupButtons = document.querySelectorAll(".button-container-start button");
+const loginButton = document.getElementById("loginButton");
 let darkModeState = localStorage.getItem("darkMode") === "true";
-function toggleDarkMode() {
-  darkModeState = !darkModeState
-  localStorage.setItem("darkMode", darkModeState);
-  applyDarkMode();
-}
 function applyDarkMode() {
   if (darkModeState) {
-    outerBody.style.backgroundColor = "#0c0105";
-    outerBody.style.color = "ghostwhite";
-    startupButtons.forEach(button => {
-      button.style.backgroundColor = "#0c0105";
-      button.style.color = "ghostwhite";
-    });
+    body.classList.add("dark-mode");
+    darkModeButton.classList.add("dark-mode");
+    loginButton.classList.add("dark-mode");
   } else {
-    outerBody.style.backgroundColor = "ghostwhite";
-    outerBody.style.color = "#0c0105";
-    startupButtons.forEach(button => {
-      button.style.backgroundColor = "ghostwhite";
-      button.style.color = "#0c0105";
-    });
+    body.classList.remove("dark-mode");
+    darkModeButton.classList.remove("dark-mode");
+    loginButton.classList.remove("dark-mode");;
   }
+}
+function toggleDarkMode() {
+  darkModeState = !darkModeState;
+  localStorage.setItem("darkMode", darkModeState);
+  applyDarkMode();
 }
 applyDarkMode();
 darkModeButton.addEventListener("click", toggleDarkMode);
