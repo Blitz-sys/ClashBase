@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <span class="button-container-start button">
+    <span class="button-container">
     <button id="darkModeButton">Toggle Theme</button>
     <button id="loginButton">Login</button>
     </span>
-    <div class="inner-body">
+    <div id="inner-body">
     <br>
     <h1>Welcome to ClashBase!</h1>
     <h3>You can copy any base or army and find any clan
@@ -19,13 +20,11 @@
     <br>
     <h2>What would you like to do?</h2>
     <br>
-    <div class="button-container-start">
-        <a href="bases.html"><button id="basesButton">Bases</button></a>
-        <a href="armies.html"><button id="armiesButton">Armies</button></a>
-        <a href="clans.html"><button id="clansButton">Clans</button></a>
+    <div class="button-container">
+        <a href="bases.html"><button>Bases</button></a>
+        <a href="armies.html"><button>Armies</button></a>
+        <a href="clans.html"><button>Clans</button></a>
     </div>
     </div>
-    <script src="index.js"></script>
-    <script src="localStorage.js"></script>
 </body>
 </html>

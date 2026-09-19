@@ -9,34 +9,27 @@ body {
     text-align: center;
     color: #0c0105;
 }
-body.dark-mode,
-body.dark-mode .button-container-start button {
-  background-color: #0c0105;
-  color: ghostwhite;
+a {
+    text-decoration: none;
 }
-.dark-mode{
-    background-color: ghostwhite;
-    color: #0c0105;
-}
-.inner-body {
+#inner-body {
     height: clamp(18.75rem, 60%, 50rem);
     width: clamp(20rem, 80%, 75rem);
     background-color: #F2B41F;
     padding: clamp(1.25rem, 5vw, 5.625rem);
     border-radius: clamp(0.5rem, 1.5vw, 0.781rem);
 }
-.button-container-start {
+.button-container button {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-bottom: clamp(0.313rem, 1vh, 0.625rem);
-    margin-top: clamp(0.625rem, 2vh, 1.25rem);
-}
-.button-container-start button {
+    cursor: pointer;
     font-size: clamp(1rem, 2.5vw, 1.25rem);
     width: clamp(12.5rem, 50vw, 18.75rem);
     margin-bottom: clamp(0.5rem, 1vw, 0.625rem);
     background-color: whitesmoke;
+    margin-left: auto;
+    margin-right: auto;
 }
 #darkModeButton {
     border-radius: 50%;
@@ -44,7 +37,6 @@ body.dark-mode .button-container-start button {
     height: clamp(2rem, 5vw, 2.5rem);
     position: absolute;
     top: clamp(0.5rem, 1.5vw, 0.625rem);
-    /* NOTE: Negative right value combined with > 100vw outer-body may hide this button off-screen */
     right: -0.313rem;
     font-size: clamp(0.438rem, 1vw, 0.531rem);
 }
@@ -55,4 +47,15 @@ body.dark-mode .button-container-start button {
     top: clamp(0.5rem, 1.5vw, 0.625rem);
     left: clamp(0.25rem, 1vw, 0.313rem);
     font-size: clamp(0.438rem, 1vw, 0.563rem);
+}
+body#dark-mode #inner-body {
+    background-color: royalblue;
+}
+body#dark-mode {
+    background-color: #0c0105;
+    color:ghostwhite
+}
+body#dark-mode .button-container button {
+  background-color: #0c0105;
+  color: ghostwhite;
 }
