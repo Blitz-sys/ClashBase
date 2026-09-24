@@ -1,11 +1,11 @@
-const body = document.body
+const html = document.documentElement
 let darkModeState = JSON.parse(localStorage.getItem("darkMode"))
 function applyDarkMode() {
   if (darkModeState) {
-    body.id = ("dark-mode")
+    html.id = ("dark-mode")
   }
   else {
-    body.removeAttribute("id")
+    html.removeAttribute("id")
   }
 }
 applyDarkMode()

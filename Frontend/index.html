@@ -5,14 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <style>
+        #darkModeButton {
+            border-radius: 50%;
+            width: clamp(2rem, 5vw, 2.5rem);
+            height: clamp(2rem, 5vw, 2.5rem);
+            position: absolute;
+            top: clamp(0.5rem, 1.5vw, 0.625rem);
+            right: -0.313rem;
+            font-size: clamp(0.438rem, 1vw, 0.531rem);
+        }
+        #loginButton {
+            position: absolute;
+            height: clamp(3rem, 8vw, 3.75rem);
+            width: clamp(3rem, 8vw, 3.75rem);
+            top: clamp(0.5rem, 1.5vw, 0.625rem);
+            left: clamp(0.25rem, 1vw, 0.313rem);
+            font-size: clamp(0.438rem, 1vw, 0.563rem);
+        }
+        .anchor-styles a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        border-width: 2px;
+        border-style: solid;
+        border-color: dimgrey;
+        cursor: pointer;
+        color: inherit;
+        font-size: clamp(1rem, 2.5vw, 1.25rem);
+        width: clamp(12.5rem, 50vw, 18.75rem);
+        margin-bottom: clamp(0.5rem, 1vw, 0.625rem);
+        background-color: whitesmoke;
+        margin-left: auto;
+        margin-right: auto;
+        }
+        html#dark-mode #loginButton,
+        html#dark-mode #darkModeButton {
+        background-color: #0c0105;
+        color: ghostwhite;
+        }
+        html#dark-mode .anchor-styles a {
+            background-color: #0c0105;
+        }
+    </style>
     <script src="script.js" defer></script>
 </head>
 <body>
-    <span class="button-container">
     <button id="darkModeButton">Toggle Theme</button>
     <button id="loginButton">Login</button>
-    </span>
-    <div id="inner-body">
     <br>
     <h1>Welcome to ClashBase!</h1>
     <h3>You can copy any base or army and find any clan
@@ -20,11 +61,10 @@
     <br>
     <h2>What would you like to do?</h2>
     <br>
-    <div class="button-container">
-        <a href="bases.html"><button>Bases</button></a>
-        <a href="armies.html"><button>Armies</button></a>
-        <a href="clans.html"><button>Clans</button></a>
-    </div>
+    <div class="anchor-styles">
+        <a href="bases.html">Bases</a>
+        <a href="armies.html">Armies</a>
+        <a href="clans.html">Clans</a>
     </div>
 </body>
 </html>

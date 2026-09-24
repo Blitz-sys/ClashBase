@@ -1,61 +1,26 @@
+html,
 body {
     font-family: Arial, sans-serif;
     background-color: ghostwhite;
     min-height: 100vh;
-    width: 100vw;
+    min-width: 100vw;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: #0c0105;
 }
-a {
-    text-decoration: none;
-}
-#inner-body {
-    height: clamp(18.75rem, 60%, 50rem);
-    width: clamp(20rem, 80%, 75rem);
+body {
+    min-height: 80vh;
+    min-width: 80vw;
     background-color: #F2B41F;
-    padding: clamp(1.25rem, 5vw, 5.625rem);
     border-radius: clamp(0.5rem, 1.5vw, 0.781rem);
 }
-.button-container button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    font-size: clamp(1rem, 2.5vw, 1.25rem);
-    width: clamp(12.5rem, 50vw, 18.75rem);
-    margin-bottom: clamp(0.5rem, 1vw, 0.625rem);
-    background-color: whitesmoke;
-    margin-left: auto;
-    margin-right: auto;
-}
-#darkModeButton {
-    border-radius: 50%;
-    width: clamp(2rem, 5vw, 2.5rem);
-    height: clamp(2rem, 5vw, 2.5rem);
-    position: absolute;
-    top: clamp(0.5rem, 1.5vw, 0.625rem);
-    right: -0.313rem;
-    font-size: clamp(0.438rem, 1vw, 0.531rem);
-}
-#loginButton {
-    position: absolute;
-    height: clamp(3rem, 8vw, 3.75rem);
-    width: clamp(3rem, 8vw, 3.75rem);
-    top: clamp(0.5rem, 1.5vw, 0.625rem);
-    left: clamp(0.25rem, 1vw, 0.313rem);
-    font-size: clamp(0.438rem, 1vw, 0.563rem);
-}
-body#dark-mode #inner-body {
-    background-color: royalblue;
-}
-body#dark-mode {
+html#dark-mode {
     background-color: #0c0105;
-    color:ghostwhite
 }
-body#dark-mode .button-container button {
-  background-color: #0c0105;
-  color: ghostwhite;
+html#dark-mode body {
+    background-color: royalblue;
+    color: ghostwhite;
 }
